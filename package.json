@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "prettier": "^3.4.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@hotwired/turbo-rails": "^8.0.12"
+  }
+}

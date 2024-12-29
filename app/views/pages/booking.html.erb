@@ -1,0 +1,52 @@
+<div class="overlay">
+  <div class="banner-container">
+    <div class="banner-slide" style="
+    "></div>
+  </div>
+
+  <div class="container">
+    <div class="side">
+      <%= image_tag "logo1.png", alt: "logo1", class: "logo1" %>
+      <div class="restaurant-info">
+        <b class="restaurant-name">DUONG BANG RESTAURANT</b>
+        <p class="restaurant-address">Address: MP4 - Mizuki Park, Bình Hưng, Bình Chánh, TP.HCM</p>
+        <hr class="">
+        <p class="">Open: Mon - Sun (9 a.m - 10 p.m)</p>
+      </div>
+      <div class="categories">
+        <p class="category-item">Category</p>
+        <p class="category-item">Category</p>
+        <p class="category-item">Category</p>
+        <p class="category-item">Category</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="search-form">
+        <input type="text" class="search-input" placeholder="Search for products...">
+        <button type="submit" class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="dish-section">
+        <div class="dish-header">
+          <b class="dish-header-title">LIST OF DISHES</b>
+        </div>
+        <div class="dish-list">
+          <% @dishes.each do |dish| %>
+            <div class="dish-item">
+              <%= image_tag dish[:image], alt: dish[:name] %>
+              <div class="dish-name"><%= dish[:name] %></div>
+              <div class="dish-description"><%= dish[:description] %></div>
+              <div class="dish-price">Price: <%= dish[:price] %></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="other">
+
+    </div>
+  </div>
+</div>

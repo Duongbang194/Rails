@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a href="/">
+      <%= image_tag "Logo.png", alt: "Logo", class: "logo" %>
+    </a>
+  </div>
+  <ul class="navbar-links">
+  <li>
+    <a class="<%= 'active' if current_page?(root_path) %>" href="<%= root_path %>">Home</a>
+  </li>
+  <li>
+    <a class="<%= 'active' if current_page?(about_path) %>" href="<%= about_path %>">About</a>
+  </li>
+  <li>
+    <a class="<%= 'active' if current_page?(contact_path) %>" href="<%= contact_path %>">Contact</a>
+  </li>
+  <li>
+    <a class="<%= 'active' if current_page?(booking_path) %>" href="<%= booking_path %>">Booking</a>
+</li>
+</ul>
+  <div class="navbar-icons">
+<i class="fas fa-sliders-h"></i>
+  </div>
+</nav>

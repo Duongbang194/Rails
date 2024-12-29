@@ -1,0 +1,179 @@
+@import './navbar.scss';
+@import './banner.scss';
+
+:root {
+  --main-background-color: rgba(255, 255, 255, 0.25);
+  --text-color: #1a1919;
+  --primary-border-color: #ff7300;
+}
+
+body {
+  background-image: url('/assets/background.png');
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-background-color);
+}
+.banner-container{
+  width:100%;
+  height:30%;
+
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin-left: 7%;
+  padding-top: 4px;
+  justify-content: space-between;
+}
+
+.side,
+.content,
+.other {
+  padding: 1px;
+}
+
+.side {
+  flex: 0 0 20%;
+  height: fit-content;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgb(204, 172, 172);
+}
+
+.logo1 {
+  width: 180px;
+  height: 90px;
+  margin-left: 20%;
+}
+
+.search-form {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  height: 35px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.search-button {
+  background-color: #eee;
+  border: none;
+  padding: 15px;
+  color: #555;
+}
+
+.search-button i {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: 0;
+}
+
+.dish-item {
+  width: 300px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgb(64, 64, 64);
+  background-color: #eee;
+}
+
+.dish-item img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 250px;
+  height: 200px;
+}
+
+.dish-price {
+  font-weight: bold;
+}
+
+.content {
+  flex: 0 0 55%;
+}
+
+.other {
+  flex: 0 0 20%;
+  background-color: rgb(255, 255, 255);
+}
+
+.restaurant-info {
+  margin-top: 10px;
+}
+
+.restaurant-name {
+  display: block;
+  font-size: 24px; /* Điều chỉnh kích thước chữ */
+  margin-bottom: 5px;
+}
+
+.restaurant-address {
+  margin: 0;
+}
+
+.categories {
+  margin-top: 20px;
+}
+
+.category-item {
+  margin-bottom: 5px;
+}
+
+.restaurant-hr {
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: 10px 0;
+}
+
+.restaurant-open {
+  margin: 0;
+}
+
+.dish-section {
+  margin-top: 10px;
+}
+
+.dish-header {
+  width: 50%;
+  background-color: #FFA500; /* Đổi màu cam tươi */
+}
+
+.dish-header-title {
+  display: block;
+  font-size: 25px;
+  padding-left: 10px;
+  color: white;
+}
