@@ -12,13 +12,16 @@
     <a class="<%= 'active' if current_page?(about_path) %>" href="<%= about_path %>">About</a>
   </li>
   <li>
-    <a class="<%= 'active' if current_page?(contact_path) %>" href="<%= contact_path %>">Contact</a>
+    <a class="<%= 'active' if current_page?(menu_path) %>" href="<%= menu_path %>">Menu</a>
   </li>
   <li>
-    <a class="<%= 'active' if current_page?(booking_path) %>" href="<%= booking_path %>">Booking</a>
-</li>
+    <a class="<%= 'active' if current_page?(reservation_path) %>" href="<%= reservation_path %>">Reservation</a>
+  </li>
+  <li>
+    <a class="<%= 'active' if current_page?(contact_path) %>" href="<%= contact_path %>">Contact</a>
+  </li>
 </ul>
   <div class="navbar-icons">
-<i class="fas fa-sliders-h"></i>
+    <li><button class="login-button">Login</button></li>
   </div>
 </nav>

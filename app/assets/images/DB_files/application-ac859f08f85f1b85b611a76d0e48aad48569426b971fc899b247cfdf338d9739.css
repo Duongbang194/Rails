@@ -82,7 +82,7 @@ body {
   padding-bottom: 5px; }
 
 .background-slider {
-  background-image: url(/assets/Banner-cf76b940f3cfabab5f78e629bdd73f785daa3e71fee669914c7ddefc8c79e364.png);
+  /* background-image: url(/assets/Banner-cf76b940f3cfabab5f78e629bdd73f785daa3e71fee669914c7ddefc8c79e364.png); */
   background-position: center;
   width: 80%;
   height: 120px;
@@ -98,7 +98,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/banner.png);
+  /* background-image: url(/banner.png); */
   background-position: center;
   background-size: cover; }
 

@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root "pages#home"
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
-  get "booking", to: "pages#booking"
+  get "reservation", to: "pages#reservation"
+  get "menu", to: "pages#menu"
 end
